@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sass": "^1.69.6"
+  },
+  "name": "mms",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "'"
+  },
+  "author": "",
+  "license": "ISC"
+}
