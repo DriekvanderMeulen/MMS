@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+.dialogue {
+  font-family: "VT323", monospace;
+  position: absolute;
+  bottom: 10vh;
+  width: 50%;
+  height: 20vh;
+  border: 10px solid #000;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dialogue .dialogueTitle {
+  font-size: 2rem;
+  margin: 10px;
+  padding: 0;
+}
+.dialogue .dialogueText {
+  position: relative;
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: inherit;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  width: 80%;
+  height: 60%;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=body.css.map */

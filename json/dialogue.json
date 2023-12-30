@@ -1,0 +1,18 @@
+{
+  "dialogue": {
+    "dia1": {
+      "columns": {
+        "ID": "1",
+        "Gender": "0",
+        "SpriteID": "1",
+        "dialogue": "Dit is dialoog 1, het wordt verteld door bruce, zijn animatie ID is 1"
+      }
+    },
+    "dia2": {
+      "ID": "2",
+      "Gender": "1",
+      "SpriteID": "2",
+      "dialogue": "Dit is dialoog 2, het wordt verteld door nova, zijn animatie ID is 2"
+    }
+  }
+}
