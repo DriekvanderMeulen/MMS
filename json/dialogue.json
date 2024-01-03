@@ -1,18 +1,46 @@
 {
   "dialogue": {
     "dia1": {
-      "columns": {
-        "ID": "1",
-        "Gender": "0",
-        "SpriteID": "1",
-        "dialogue": "Dit is dialoog 1, het wordt verteld door bruce, zijn animatie ID is 1"
-      }
+      "ID": "1",
+      "Gender": "male",
+      "SpriteID": "1",
+      "dialogue": "Dit is dialoog 1, het wordt verteld door bruce, zijn animatie ID is 1",
+      "audio": false
     },
     "dia2": {
       "ID": "2",
-      "Gender": "1",
+      "Gender": "female",
       "SpriteID": "2",
-      "dialogue": "Dit is dialoog 2, het wordt verteld door nova, zijn animatie ID is 2"
+      "dialogue": "Dit is dialoog 2, het wordt verteld door nova, zijn animatie ID is 2",
+      "audio": false
+    },
+    "dia3": {
+      "ID": "3",
+      "Gender": "male",
+      "SpriteID": "1",
+      "dialogue": "Dit is dialoog 3, het wordt verteld door bruce, zijn animatie ID is 1. In dit dialoog is een audiotape beschikbaar.",
+      "audio": true
+    },
+    "dia4": {
+      "ID": "4",
+      "Gender": "female",
+      "SpriteID": "4",
+      "dialogue": "Dit  dialoog 4, het wordt verteld door nova, zijn animatie ID is 4",
+      "audio": false
+    },
+    "dia5": {
+      "ID": "5",
+      "Gender": "male",
+      "SpriteID": "1",
+      "dialogue": "Dit is dialoog 5, het wordt verteld door bruce, zijn animatie ID is 1",
+      "audio": false
+    },
+    "dia6": {
+      "ID": "6",
+      "Gender": "female",
+      "SpriteID": "4",
+      "dialogue": "Dit is dialoog 6, het wordt verteld door nova, zijn animatie ID is 4",
+      "audio": false
     }
   }
 }
