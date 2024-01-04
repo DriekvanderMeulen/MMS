@@ -1,12 +1,12 @@
 {
   "dependencies": {
-    "sass": "^1.69.6"
+    "sass": "^1.69.6",
+    "typescript": "^5.3.3"
   },
   "name": "mms",
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "scss-watch": "sass --watch scss:css",
     "scss-build": "sass scss:css --style compressed"
