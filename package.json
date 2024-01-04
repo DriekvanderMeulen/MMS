@@ -9,7 +9,8 @@
   "main": "index.js",
   "scripts": {
     "scss-watch": "sass --watch scss:css",
-    "scss-build": "sass scss:css --style compressed"
+    "scss-build": "sass scss:css --style compressed",
+    "ts-watch": "tsc ts/script.ts --watch"
   },
   "author": "",
   "license": "ISC"
