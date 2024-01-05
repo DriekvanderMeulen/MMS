@@ -52,3 +52,20 @@
   background-color: #fff;
   color: #000;
 }
+
+.homebutton {
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  width: 5vw;
+  height: 5vw;
+  background-color: #000;
+  color: #fff;
+  border: 10px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+  overflow: none;
+  text-align: justify;
+}
