@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="364" height="139" viewBox="0 0 364 139">
+  <g id="Start" transform="translate(-215 -856)">
+    <g id="Rectangle_9" data-name="Rectangle 9" transform="translate(215 856)" fill="rgba(255,255,255,0.2)" stroke="#eee9ed" stroke-width="5">
+      <rect width="364" height="139" stroke="none"/>
+      <rect x="2.5" y="2.5" width="359" height="134" fill="none"/>
+    </g>
+    <text id="START-2" data-name="START" transform="translate(286 964)" fill="#f6ecf5" font-size="100" font-family="AgencyFB-Bold, Agency FB" font-weight="700" letter-spacing="0.02em"><tspan x="0" y="0">START</tspan></text>
+  </g>
+</svg>
