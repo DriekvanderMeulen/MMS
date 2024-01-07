@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101">
+  <g id="Info-btn" transform="translate(-66 -60)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(66 60)" fill="rgba(255,255,255,0.2)" stroke="#fff" stroke-width="5">
+      <circle cx="50.5" cy="50.5" r="50.5" stroke="none"/>
+      <circle cx="50.5" cy="50.5" r="48" fill="none"/>
+    </g>
+    <text id="i" transform="translate(98 133)" fill="#f6ecf5" font-size="67" font-family="Consolas" letter-spacing="0.02em"><tspan x="0" y="0">i</tspan></text>
+  </g>
+</svg>

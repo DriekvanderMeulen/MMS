@@ -20,12 +20,16 @@ function checkCounterAndManipulate() {
     if (h1Element) {
       h1Element.remove();
     }
-    // Correct way to set background image
+
     document.body.style.backgroundImage =
-      "url('../assets/backgrounds/16by9placeholder.jpeg')";
+      "url('../assets/backgrounds/space-start-page.png')";
     let start = document.querySelector(".start");
-    start.style.bottom = "10vw";
+    start.style.bottom = "5vw";
     let info = document.querySelector(".info");
-    info.style.top = "10vw";
+    info.style.top = "5vw";
+    let text = document.querySelector(".text");
+    text.style.right = "4vw";
+    let audio = new Audio("../assets/audio/temp.mp3");
+    audio.play();
   }
 }
