@@ -1,0 +1,68 @@
+.side-window {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  border: 2px solid black;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease;
+}
+.side-window.left-window {
+  left: 0;
+  transform: translateY(-50%) translateX(-100%);
+}
+.side-window.left-window.show {
+  transform: translateY(-50%) translateX(0%);
+}
+.side-window.right-window {
+  right: 0;
+  transform: translateY(-50%) translateX(100%);
+}
+.side-window.right-window.show {
+  transform: translateY(-50%) translateX(0%);
+}
+
+.window-button {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.window-button:hover {
+  background-color: #444;
+}
+.window-button.left-button {
+  left: 0;
+}
+.window-button.right-button {
+  right: 0;
+}
+
+.window-button {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.window-button:hover {
+  background-color: #444;
+}
+.window-button.left-button {
+  left: 0;
+}
+.window-button.right-button {
+  right: 0;
+}
+
+/*# sourceMappingURL=sideWindow.css.map */
