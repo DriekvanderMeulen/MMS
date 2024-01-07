@@ -51,3 +51,17 @@ document.addEventListener("keydown", function (event) {
     resetToFirstDialogue();
   }
 });
+
+document
+  .getElementById("leftWindowButton")
+  .addEventListener("click", function () {
+    document.querySelector(".left-window").classList.toggle("show");
+    console.log("test");
+  });
+
+document
+  .getElementById("rightWindowButton")
+  .addEventListener("click", function () {
+    document.querySelector(".right-window").classList.toggle("show");
+    console.log("test");
+  });
