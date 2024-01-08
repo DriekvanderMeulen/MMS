@@ -1,7 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="91.368" height="453.791" viewBox="0 0 91.368 453.791">
-  <path id="Path_6" data-name="Path 6" d="M0,292.083l86.368,65.13V688.528L0,739.5V309.074" transform="translate(88.868 743.878) rotate(180)" fill="rgba(17,17,17,0.5)" stroke="#ff98ed" stroke-width="5"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="120.478" height="453.791" viewBox="0 0 120.478 453.791">
+  <path id="Path_7" data-name="Path 7" d="M0,292.083l86.368,65.13V688.528L0,739.5V309.074" transform="translate(117.978 743.878) rotate(180)" fill="rgba(17,17,17,0.5)" stroke="#ff98ed" stroke-width="5"/>
   <text id="I_N_F_O" data-name="I
 N
 F
-O" transform="translate(25.184 147.086)" fill="#fff" font-size="60" font-family="Consolas"><tspan x="0" y="0">I</tspan><tspan x="0" y="60">N</tspan><tspan x="0" y="120">F</tspan><tspan x="0" y="180">O</tspan></text>
+O" transform="translate(54.294 147.086)" fill="#fff" font-size="60" font-family="Consolas"><tspan x="0" y="0">I</tspan><tspan x="0" y="60">N</tspan><tspan x="0" y="120">F</tspan><tspan x="0" y="180">O</tspan></text>
+  <g id="Group_2" data-name="Group 2" transform="translate(124.568 708.494) rotate(180)">
+    <line id="Line_3" data-name="Line 3" y1="20.5" x2="17" transform="matrix(-0.017, -1, 1, -0.017, 102.797, 497.294)" fill="none" stroke="#ff98ed" stroke-width="3"/>
+    <line id="Line_4" data-name="Line 4" x1="17" y1="20.5" transform="matrix(-0.017, -1, 1, -0.017, 103.093, 514.292)" fill="none" stroke="#ff98ed" stroke-width="3"/>
+  </g>
 </svg>
