@@ -46,7 +46,7 @@ function manipulateDOMEvery5Seconds() {
     }
 
     document.body.style.backgroundImage =
-      "url('/repository-name/assets/backgrounds/space-start-page.png')";
+      "url('../assets/backgrounds/space-start-page.png')";
 
     let start = document.querySelector(".start");
     start.style.bottom = "5vw";

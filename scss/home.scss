@@ -61,8 +61,6 @@ h1 {
 .typing {
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid #fff; /* Neon cursor */
-  font-family: "Courier New", monospace; /* Monospaced font for typewriter effect */
   font-size: 1.5em;
   animation: blinkCursor 0.75s step-end infinite alternate;
 }
