@@ -1,5 +1,8 @@
 Current version alpha 0.22 Dialogue Script version: beta 0.2
-//GITHUB PUSH STILL IN PROGRESS !Important
+
+notes:
+progress update noon GMT, no new commit, all new code resulted in bugs and breaks
+
 
 Changelog alpha 0.22  (08/01/2024 11am GMT)
 
