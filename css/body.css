@@ -1,4 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@font-face {
+  font-family: "agency";
+  src: url("../assets/fonts/agencyfb_reg.ttf") format("ttf");
+}
+@font-face {
+  font-family: "agency-bold";
+  src: url("../assets/fonts/agencyfb_bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "consolas";
+  src: url("../assets/fonts/Consolas-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "consolas-bold";
+  src: url("../assets/fonts/ConsolasBold.ttf") format("ttf");
+}
 body {
   background: #000;
   background-image: url("../assets/backgrounds/mainBG1.png");
@@ -8,7 +23,7 @@ body {
 }
 
 .dialogue {
-  font-family: "VT323", monospace;
+  font-family: "consolas";
   position: absolute;
   bottom: 10vh;
   width: 50%;
@@ -21,9 +36,14 @@ body {
 }
 
 .dialogue .dialogueTitle {
+  font-family: "agency-bold";
   font-size: 2rem;
-  margin: 10px;
   padding: 0;
+  position: relative;
+  bottom: 20%;
+  background-color: #ff98ed;
+  left: -0.5%;
+  width: 15%;
 }
 
 .dialogue .dialogueText {
@@ -48,13 +68,26 @@ body {
     width: 100%;
   }
 }
-.dialogue button {
+.dialogue .rightButton {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 22%;
+  right: 2%;
   margin: 10px;
   padding: 0;
-  font-size: 1.5rem;
+  font-size: 4rem;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dialogue .leftButton {
+  position: absolute;
+  bottom: 22%;
+  left: 2%;
+  margin: 10px;
+  padding: 0;
+  font-size: 4rem;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -62,8 +95,7 @@ body {
 }
 
 .dialogue button:hover {
-  background-color: #fff;
-  color: #000;
+  color: #ff98ed;
 }
 
 .homebutton {
