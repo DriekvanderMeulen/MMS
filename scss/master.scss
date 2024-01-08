@@ -1,0 +1,23 @@
+$color-white: #fff;
+$color-black: #000;
+$color-pink: #ff98ed;
+
+@font-face {
+  font-family: "agency";
+  src: url("../assets/fonts/agencyfb_reg.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "agency-bold";
+  src: url("../assets/fonts/agencyfb_bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "consolas";
+  src: url("../assets/fonts/Consolas-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "consolas-bold";
+  src: url("../assets/fonts/ConsolasBold.ttf") format("ttf");
+}
