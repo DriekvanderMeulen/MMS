@@ -11,7 +11,6 @@ Changelog alpha 0.22  (08/01/2024 11am GMT)
 * Changes to fonts to better match prototype
 * Fixed a bug that prevents the start background to load
 * Fixed a bug that didn’t correctly process the fonts
-
 * Current known bugs: 
 * Previous button functions as next button
 * Next button functions are disabled 
@@ -26,7 +25,6 @@ Changelog alpha 0.21 (08/01/2024 10am GMT)
 * Changes to start screen to go to a timed based introduction
 * Changes to fonts to better match prototype
 * Changes to styling to better match prototype
-
 * Current known bugs: 
 * Agency font doesn’t work
 * Startscreen background doesn’t work
