@@ -1,17 +1,25 @@
-Current version alpha 0.24 Dialogue Script version: beta 0.2
+Current version alpha 0.241 Dialogue Script version: beta 0.2
+
+Changelog 0.241 (10-01-2024) 12am GMT
+* Rewrote dialogue.js to add compatibility to audio.js
+* Added console.log to tell the console when an audio file has to played
+* Added a counter to determin wich audio should be played
+
+* Current known bugs:
+* audio window breaks because of error in dialogue window
+* Updated dialogue window breaks dialoguespeaker box
+
+Upcoming features
+* Changes to audio window to include functionality (mayor feature)
+* Changes to font and styling to include new teacher feedback (0.3 update) will take a while
 
 Changelog 0.24 (10/01/2024 10am GMT)
 * Organised the javascript files
 * Added a testing json file for testing funcitonality
 * Added functionality to the previous button
 * Fixed a bug that shuffled the next and previous button
-
 * Current known bugs:
 * Audio window is unstable and breaks application. commented out in this version.
-
-Upcoming features
-* Changes to side windows to include functionality (feature keeps breaking) will take a while
-* Changes to font and styling to include new teacher feedback (0.3 update) will take a while
 
 Changelog alpha 0.22  (08/01/2024 11am GMT)
 * Added extra scene at the beginning of the MMS
