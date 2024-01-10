@@ -9,8 +9,8 @@ Changelog 0.24 (10/01/2024 10am GMT)
 * Audio window is unstable and breaks application. commented out in this version.
 
 Upcoming features
-* Changes to side windows to include functionality
-* Changes to fonts to better match prototype
+* Changes to side windows to include functionality (feature keeps breaking) will take a while
+* Changes to font and styling to include new teacher feedback (0.3 update) will take a while
 
 Changelog alpha 0.22  (08/01/2024 11am GMT)
 * Added extra scene at the beginning of the MMS
