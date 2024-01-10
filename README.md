@@ -1,4 +1,5 @@
 Current version alpha 0.241 Dialogue Script version: beta 0.2
+Notes: prod build is still on alpha 0.24
 
 Changelog 0.241 (10-01-2024) 12am GMT
 * Rewrote dialogue.js to add compatibility to audio.js
