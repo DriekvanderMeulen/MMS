@@ -2,6 +2,7 @@ Current version alpha 0.24 Dialogue Script version: beta 0.2
 
 Changelog 0.24 (10/01/2024 10am GMT)
 * Organised the javascript files
+* Added a testing json file for testing funcitonality
 * Added functionality to the previous button
 * Fixed a bug that shuffled the next and previous button
 
