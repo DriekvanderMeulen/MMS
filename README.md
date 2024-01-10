@@ -1,11 +1,19 @@
-Current version alpha 0.22 Dialogue Script version: beta 0.2
+Current version alpha 0.24 Dialogue Script version: beta 0.2
 
-notes:
-progress update noon GMT, no new commit, all new code resulted in bugs and breaks
+Changelog 0.24 (10/01/2024 10am GMT)
+* Organised the javascript files
+* Added a testing json file for testing funcitonality
+* Added functionality to the previous button
+* Fixed a bug that shuffled the next and previous button
 
+* Current known bugs:
+* Audio window is unstable and breaks application. commented out in this version.
+
+Upcoming features
+* Changes to side windows to include functionality (feature keeps breaking) will take a while
+* Changes to font and styling to include new teacher feedback (0.3 update) will take a while
 
 Changelog alpha 0.22  (08/01/2024 11am GMT)
-
 * Added extra scene at the beginning of the MMS
 * Changes to side windows to better match prototype
 * Changes to fonts to better match prototype
@@ -15,12 +23,7 @@ Changelog alpha 0.22  (08/01/2024 11am GMT)
 * Previous button functions as next button
 * Next button functions are disabled 
 
-Upcoming features
-* Changes to side windows to include functionality
-* Changes to fonts to better match prototype
-
 Changelog alpha 0.21 (08/01/2024 10am GMT)
-
 * Added bug report
 * Changes to start screen to go to a timed based introduction
 * Changes to fonts to better match prototype
