@@ -6,26 +6,27 @@ function updateDialogue() {
   var speakerName = currentDialogue.Gender === "male" ? "Bruce" : "Nova";
   var dialogueTitleElement = document.querySelector(".dialogueTitle");
 
-  if (currentDialogue.Gender === null) {
-    dialogueTitleElement.textContent = "";
+  if (dialogueTitleElement) {
+    if (currentDialogue.Gender != null) {
+      dialogueTitleElement.textContent = "";
+    } else {
+      dialogueTitleElement.textContent = speakerName + ":";
+    }
+
+    dialogueTitleElement.classList.toggle(
+      "dialogueTitle",
+      (currentDialogue.Gender = null)
+    );
   } else {
-    dialogueTitleElement.textContent = speakerName + ":";
+    console.error("Dialogue title element not found");
   }
 
-  dialogueTitleElement.classList.toggle(
-    "dialogueTitle",
-    currentDialogue.Gender !== null
-  );
-  document.querySelector(".dialogueText").textContent =
-    currentDialogue.dialogue;
-  triggerAnimation();
-
-  console.log(
-    "ID: "
-      .concat(currentDialogue.ID, ", Gender: ")
-      .concat(currentDialogue.Gender, ", SpriteID: ")
-      .concat(currentDialogue.SpriteID)
-  );
+  var dialogueTextElement = document.querySelector(".dialogueText");
+  if (dialogueTextElement) {
+    dialogueTextElement.textContent = currentDialogue.dialogue;
+  } else {
+    console.error("Dialogue text element not found");
+  }
 }
 
 function loadNextDialogue() {
