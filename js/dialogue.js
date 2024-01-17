@@ -1,10 +1,14 @@
-var currentDialogueIndex = 0;
-var dialogues = [];
+let currentDialogueIndex = 0;
+let dialogues = [];
 
+function checkAudioStatus() {
+  let currentDialogue = dialogues[currentDialogueIndex];
+  return currentDialogue.audio;
+}
 function updateDialogue() {
-  var currentDialogue = dialogues[currentDialogueIndex];
-  var speakerName = currentDialogue.Gender === "male" ? "Bruce" : "Nova";
-  var dialogueTitleElement = document.querySelector(".dialogueTitle");
+  let currentDialogue = dialogues[currentDialogueIndex];
+  let speakerName = currentDialogue.Gender === "male" ? "Bruce" : "Nova";
+  let dialogueTitleElement = document.querySelector(".dialogueTitle");
 
   if (currentDialogue.Gender === null) {
     dialogueTitleElement.textContent = "";
@@ -26,6 +30,17 @@ function updateDialogue() {
       .concat(currentDialogue.Gender, ", SpriteID: ")
       .concat(currentDialogue.SpriteID)
   );
+  let audioStatus = checkAudioStatus();
+  if (audioStatus === true) {
+    console.log("Audio is set to true.");
+    // Mock code for when audio is true
+  } else if (audioStatus === false) {
+    console.log("Audio is set to false.");
+    // Mock code for when audio is false
+  } else {
+    console.log("Audio is set to null.");
+    // Mock code for when audio is null
+  }
 }
 
 function loadNextDialogue() {
@@ -39,7 +54,7 @@ function resetToFirstDialogue() {
   updateDialogue();
 }
 function triggerAnimation() {
-  var dialogueText = document.querySelector(".dialogueText");
+  let dialogueText = document.querySelector(".dialogueText");
   dialogueText.style.animation = "none"; // Remove the animation
   dialogueText.offsetHeight; // Trigger reflow
   dialogueText.style.animation = ""; // Reapply the animation
@@ -52,7 +67,7 @@ function loadPreviousDialogue() {
 }
 
 // Fetching the JSON data
-fetch("./json/testDialogue.json")
+fetch("./json/dialogue.json")
   .then(function (response) {
     return response.json();
   })
@@ -66,6 +81,7 @@ fetch("./json/testDialogue.json")
 document
   .querySelector(".rightButton")
   .addEventListener("click", loadNextDialogue);
+
 document.addEventListener("keydown", function (event) {
   if (event.key === "r" || event.key === "R") {
     resetToFirstDialogue();
