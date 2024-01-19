@@ -1,31 +1,50 @@
-var currentDialogueIndex = 0;
-var dialogues = [];
+let currentDialogueIndex = 0;
+let dialogues = [];
+let audioUnlocked = 0;
+let audio = null;
 
+function checkAudioStatus() {
+  let currentDialogue = dialogues[currentDialogueIndex];
+  return currentDialogue.audio;
+}
 function updateDialogue() {
-  var currentDialogue = dialogues[currentDialogueIndex];
-  var speakerName = currentDialogue.Gender === "male" ? "Bruce" : "Nova";
-  var dialogueTitleElement = document.querySelector(".dialogueTitle");
+  let currentDialogue = dialogues[currentDialogueIndex];
+  let speakerName = currentDialogue.Gender === "male" ? "Bruce" : "Nova";
+  let dialogueTitleElement = document.querySelector(".dialogueTitle");
 
-  if (dialogueTitleElement) {
-    if (currentDialogue.Gender != null) {
-      dialogueTitleElement.textContent = "";
-    } else {
-      dialogueTitleElement.textContent = speakerName + ":";
-    }
-
-    dialogueTitleElement.classList.toggle(
-      "dialogueTitle",
-      (currentDialogue.Gender = null)
-    );
+  if (currentDialogue.Gender === null) {
+    dialogueTitleElement.textContent = "";
   } else {
-    console.error("Dialogue title element not found");
+    dialogueTitleElement.textContent = speakerName + ":";
   }
 
-  var dialogueTextElement = document.querySelector(".dialogueText");
-  if (dialogueTextElement) {
-    dialogueTextElement.textContent = currentDialogue.dialogue;
+  dialogueTitleElement.classList.toggle(
+    "dialogueTitle",
+    currentDialogue.Gender !== null
+  );
+  document.querySelector(".dialogueText").textContent =
+    currentDialogue.dialogue;
+  triggerAnimation();
+
+  console.log(
+    "ID: "
+      .concat(currentDialogue.ID, ", Gender: ")
+      .concat(currentDialogue.Gender, ", SpriteID: ")
+      .concat(currentDialogue.SpriteID)
+  );
+  let audioStatus = checkAudioStatus();
+  if (audioStatus === true) {
+    console.log("Audio is set to true.");
+    // Mock code for when audio is true
+    audioUnlocked++;
+    trueaudio();
+  } else if (audioStatus === false) {
+    console.log("Audio is set to false.");
+    // Mock code for when audio is false
+    falseaudio();
   } else {
-    console.error("Dialogue text element not found");
+    console.log("Audio is set to null.");
+    // Mock code for when audio is null
   }
 }
 
@@ -40,7 +59,7 @@ function resetToFirstDialogue() {
   updateDialogue();
 }
 function triggerAnimation() {
-  var dialogueText = document.querySelector(".dialogueText");
+  let dialogueText = document.querySelector(".dialogueText");
   dialogueText.style.animation = "none"; // Remove the animation
   dialogueText.offsetHeight; // Trigger reflow
   dialogueText.style.animation = ""; // Reapply the animation
@@ -52,8 +71,39 @@ function loadPreviousDialogue() {
   }
 }
 
+function trueaudio() {
+  let audioElement = document.querySelector(".audio");
+  if (audioElement) {
+    audioElement.style.display = "block";
+  }
+  switch (audioUnlocked) {
+    case 1:
+      audio = new Audio("./assets/audio/audio1.mp3");
+      break;
+    case 2:
+      audio = new Audio("./assets/audio/audio2.mp3");
+      break;
+    case 3:
+      audio = new Audio("./assets/audio/audio3.mp3");
+      break;
+    case 4:
+      audio = new Audio("./assets/audio/audio4.mp3");
+      break;
+    case 5:
+      audio = new Audio("./assets/audio/audio5.mp3");
+      break;
+  }
+}
+
+function falseaudio() {
+  let audioElement = document.querySelector(".audio");
+  if (audioElement) {
+    audioElement.style.display = "none";
+  }
+}
+
 // Fetching the JSON data
-fetch("./json/testDialogue.json")
+fetch("./json/dialogue.json")
   .then(function (response) {
     return response.json();
   })
@@ -67,6 +117,7 @@ fetch("./json/testDialogue.json")
 document
   .querySelector(".rightButton")
   .addEventListener("click", loadNextDialogue);
+
 document.addEventListener("keydown", function (event) {
   if (event.key === "r" || event.key === "R") {
     resetToFirstDialogue();
@@ -90,3 +141,8 @@ document
 document
   .querySelector(".leftButton")
   .addEventListener("click", loadPreviousDialogue);
+
+document.querySelector(".audio").addEventListener("click", function () {
+  audio.play();
+  console.log("audio played ");
+});

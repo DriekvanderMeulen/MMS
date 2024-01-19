@@ -1,6 +1,6 @@
 @import url("master.scss");
 body {
-  background-image: url("../assets/backgrounds/space.png");
+  background-image: url("../assets/images/space.png");
   overflow: hidden;
 }
 
@@ -17,7 +17,7 @@ h1 {
 }
 
 .start {
-  background-image: url("../assets/buttons/start.svg");
+  background-image: url("../assets/svg/start.svg");
   position: absolute;
   min-width: 19.8vw;
   min-height: 7.5vw;
@@ -28,7 +28,7 @@ h1 {
 }
 
 .info {
-  background-image: url("../assets/buttons/info.svg");
+  background-image: url("../assets/svg/info.svg");
   position: absolute;
   min-width: 5vw;
   min-height: 5vw;
@@ -39,7 +39,7 @@ h1 {
 }
 
 .text {
-  background-image: url("../assets/buttons/des.svg");
+  background-image: url("../assets/svg/des.svg");
   position: absolute;
   min-width: 30vw;
   min-height: 16vw;
