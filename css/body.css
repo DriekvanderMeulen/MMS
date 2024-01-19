@@ -16,7 +16,7 @@
 }
 body {
   background: #000;
-  background-image: url("../assets/backgrounds/mainBG1.png");
+  background-image: url("../assets/images/mainBG1.png");
   overflow-y: hidden;
   background-size: cover;
   background-repeat: no-repeat;
@@ -113,6 +113,23 @@ body {
   font-size: 1.5rem;
   overflow: none;
   text-align: justify;
+}
+
+.audio {
+  position: absolute;
+  bottom: 35vh;
+  right: 50%;
+  transform: translateX(50%);
+  width: 5vw;
+  height: 5vw;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+  overflow: none;
+  text-align: justify;
+  display: none;
 }
 
 /*# sourceMappingURL=body.css.map */
