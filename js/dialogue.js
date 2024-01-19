@@ -1,5 +1,7 @@
 let currentDialogueIndex = 0;
 let dialogues = [];
+let audioUnlocked = 0;
+let audio = null;
 
 function checkAudioStatus() {
   let currentDialogue = dialogues[currentDialogueIndex];
@@ -34,9 +36,12 @@ function updateDialogue() {
   if (audioStatus === true) {
     console.log("Audio is set to true.");
     // Mock code for when audio is true
+    audioUnlocked++;
+    trueaudio();
   } else if (audioStatus === false) {
     console.log("Audio is set to false.");
     // Mock code for when audio is false
+    falseaudio();
   } else {
     console.log("Audio is set to null.");
     // Mock code for when audio is null
@@ -63,6 +68,37 @@ function loadPreviousDialogue() {
   if (currentDialogueIndex > 0) {
     currentDialogueIndex--;
     updateDialogue();
+  }
+}
+
+function trueaudio() {
+  let audioElement = document.querySelector(".audio");
+  if (audioElement) {
+    audioElement.style.display = "block";
+  }
+  switch (audioUnlocked) {
+    case 1:
+      audio = new Audio("./assets/audio/audio1.mp3");
+      break;
+    case 2:
+      audio = new Audio("./assets/audio/audio2.mp3");
+      break;
+    case 3:
+      audio = new Audio("./assets/audio/audio3.mp3");
+      break;
+    case 4:
+      audio = new Audio("./assets/audio/audio4.mp3");
+      break;
+    case 5:
+      audio = new Audio("./assets/audio/audio5.mp3");
+      break;
+  }
+}
+
+function falseaudio() {
+  let audioElement = document.querySelector(".audio");
+  if (audioElement) {
+    audioElement.style.display = "none";
   }
 }
 
@@ -105,3 +141,8 @@ document
 document
   .querySelector(".leftButton")
   .addEventListener("click", loadPreviousDialogue);
+
+document.querySelector(".audio").addEventListener("click", function () {
+  audio.play();
+  console.log("audio played ");
+});
